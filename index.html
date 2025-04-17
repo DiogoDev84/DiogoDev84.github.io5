@@ -1,47 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvimento web.</title>
-   <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div class="calculadora">
-        <input type="text" id="display" disabled>
-       
-        <div id="teclado">
-           
-        <button onclick="limpar()">C</button>
-        <button onclick="adicionarValor('/')">/</button>
-        <button onclick="adicionarValor('*')">*</button>
-        <button onclick="guardarvalor('-')"> -</button>
-            
-        <button onclick="guardarvalor('7')"> 7</button>
-        <button onclick="guardarvalor('8')"> 8</button>
-        <button onclick="guardarvalor('9')"> 9</button>
-        <button onclick="guardarvalor('+')">+</button>
-            
-        <button onclick="guardarvalor('4')">4</button>
-        <button onclick="guardarvalor('5')">5</button>
-        <button onclick="guardarvalor('6')">6</button>
-        <button onclick="guardarvalor()">=</button>
-            
-        <button onclick="guardarvalor('1')">1</button>
-        <button onclick="guardarvalor('2')">2</button>
-        <button onclick="guardarvalor('3')">3</button>
-        <button onclick="guardarvalor('0')" id="zero">0</button>
-        <button onclick="guardarvalor('.')">.</button>
-        
+<html lang="pt-BR">
 
-         
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="calculadora">
+        <input type="text" id="display " disablead>
+        <div id="teclado">
+            <button onclick="limpar()">C</button>
+            <button onclick="adicionarValor('/')">/</button>
+            <button onclick="adicionarValor('%')">%</button>
+            <button onclick="adicionarValor('')"></button>
+            <button onclick="adicionarValor('-')">-</button>
             
+            <button onclick="somarValor('7')">7</button>
+            <button onclick="somarValor('8')">8</button>
+            <button onclick="somarValor('9')">9</button>
+            <button onclick="somarValor('+')">+</button>
+            
+            <button onclick="somarValor('4')">4</button>
+            <button onclick="somarValor('5')">5</button>
+            <button onclick="somarValor('6')">6</button>
+            <button onclick="somarValor()">=</button>
+            
+            <button onclick="somarValor('1')">1</button>
+            <button onclick="somarValor('2')">2</button>
+            <button onclick="somarValor('3')">3</button>
+            <button onclick="somarValor('0')" class="zero">0</button>
+            <button onclick="somarValor('.')">.</button>
+            <button onclick="calcular()">=</button>
+
         </div>
-        
     </div>
-    <script src="index.js"></script>
-        
-        
+    <Script src="script.js"></script>
 
 </body>
+
 </html>
